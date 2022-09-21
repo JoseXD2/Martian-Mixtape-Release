@@ -43,7 +43,7 @@ class OptionsMenuState extends MusicBeatState
 			If you plug in a value, the script will run when the option is hovered over.
 		 */
 
-		#if !html5
+		#if !android
 		Discord.changePresence('OPTIONS MENU', 'Main Menu');
 		#end
 
