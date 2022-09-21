@@ -67,7 +67,7 @@ class CustomTitlescreen extends MusicBeatState
 		if (!initialized)
 		{
 			///*
-			#if !html5
+			#if !android
 			Discord.changePresence('TITLE SCREEN', 'Main Menu');
 			#end
 
@@ -171,7 +171,7 @@ class CustomTitlescreen extends MusicBeatState
 
 		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER;
 
-		#if mobile
+		#if android
 		for (touch in FlxG.touches.list)
 		{
 			if (touch.justPressed)
