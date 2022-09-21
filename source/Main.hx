@@ -22,7 +22,7 @@ import openfl.events.UncaughtErrorEvent;
 import sys.FileSystem;
 import sys.io.File;
 import sys.io.Process;
-
+import openfl.utils.Assets as OpenFlAssets;
 // Here we actually import the states and metadata, and just the metadata.
 // It's nice to have modularity so that we don't have ALL elements loaded at the same time.
 // at least that's how I think it works. I could be stupid!
@@ -183,7 +183,7 @@ class Main extends Sprite
 		// addChild(new FPS(10, 3, 0xFFFFFF));
 
 		// begin the discord rich presence
-		#if !html5
+		#if !android
 		Discord.initializeRPC();
 		Discord.changePresence('');
 		#end
