@@ -1,8 +1,8 @@
 package gameFolder.meta.data.dependency;
 
-#if !html5
+#if !android
 import discord_rpc.DiscordRpc;
-#end
+
 import lime.app.Application;
 
 /**
@@ -77,3 +77,4 @@ class Discord
 	}
 	#end
 }
+#end
